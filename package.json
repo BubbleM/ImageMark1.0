@@ -1,0 +1,29 @@
+{
+  "name": "image-mark",
+  "version": "1.0.0",
+  "description": "图像检测网站",
+  "main": "./config/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --colors",
+    "build": "webpack --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BubbleM/ImageMark1.0.git"
+  },
+  "author": "BubbleM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BubbleM/ImageMark1.0/issues"
+  },
+  "homepage": "https://github.com/BubbleM/ImageMark1.0#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.2.0",
+    "eslint-loader": "^1.9.0",
+    "style-loader": "^0.18.2",
+    "stylus": "^0.54.5"
+  }
+}
