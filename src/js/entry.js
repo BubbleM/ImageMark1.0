@@ -1,6 +1,7 @@
 require('../css/main.css');
-var $ = require('jquery');
+require('../css/base.styl');
+// var $ = require('jquery');
 
-import 'bootstrap/dist/js/bootstrap.js';
+// import 'bootstrap/dist/js/bootstrap.js';
 
-$('body').append('<div>hello world</div>');
+// $('body').append('<div>hello world</div>');
