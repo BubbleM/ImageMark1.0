@@ -5,13 +5,23 @@
 	<title>图片检测首页</title>
 </head>
 <body>
-  <div class="">
+  <div class="container-flex">
     <div class="home">
-      <header></header>
+      <header>
+        <img src="./src/img/logo1.png" alt="logo">
+        <ul class="nav">
+          <li class="nav-item1">核心技术</li>
+          <li class="nav-item1">媒体动态</li>
+          <li class="nav-item1">媒体动态</li>
+          <li class="nav-item1">关于我们</li>
+        </ul>
+      </header>
+      <!-- 循环播放loop 不要声音muted -->
+      <video autoplay="autoplay" preload="auto" loop poster="src/img/车辆行人检测-post-new.jpg">
+        <source type="video/mp4" src="./src/img/车辆行人检测.mp4"/>
+      </video>
     </div>
-    <video autoplay="autoplay" preload="auto" loop poster="src/img/车辆行人检测-post-new.jpg">
-      <source type="video/mp4" src="./src/img/车辆行人检测.mp4"/>
-    </video>
+    <div></div>
   </div>
 	<script src='index.js'></script>
 </body>
