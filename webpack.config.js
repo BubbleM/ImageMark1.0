@@ -5,11 +5,14 @@ var path = require('path'); // 导入路径包
 var webpack = require('webpack');
 module.exports = {
     entry: { // 打包入口文件
-        path: path.join(__dirname, 'src/js/entry.js')
+        index: './src/js/entry.js',
+        login: './src/js/login.js'
+        // path: path.join(__dirname, ['src/js/entry.js','src/js/login.js'])
     },
     output: {　// 打包过后的文件
         path: path.join(__dirname, "config"),
-        filename: 'index.js'
+        filename: '[name].js'
+        // filename: 'index.js'
     },
     watch: true, // 开启监察模式
     module: {
