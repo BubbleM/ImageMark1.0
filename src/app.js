@@ -1,5 +1,5 @@
 require('./css/common.css');
-import Layer from './components/layer/layer.js';
+import Layer from './components/layer/layer';
 
 const App = function () {
   let dom = document.getElementById('app');
