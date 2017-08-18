@@ -4,7 +4,10 @@ const webpack = require('webpack'); // 访问内置的插件
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-  entry : './src/app.js',
+  entry : {
+    index: './src/index.js',
+    app: './src/app.js'
+  },
   output: {
     path: path.resolve(__dirname, './dist'),
     filename:'js/[name].bundle.js'
@@ -32,26 +35,52 @@ module.exports = {
         test: /\.styl/,
         loader: 'style-loader!css-loader!postcss-loader!stylus-loader'
       },{
-        test: /\.(png|jpg|gif|svg)$/i,
+        test: /\.(png|jpg|gif|svg|mp4|JPG)$/i,
         loaders: [
           'url-loader?limit:20000&name=assets/[name]-[hash:5].[ext]',
           'image-webpack-loader'
         ]
+      },{
+        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader?limit=10000&name=src/[name].[ext]&mimetype=application/font-woff'
+      }, {
+        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader?limit=10000&name=src/[name].[ext]&mimetype=application/octet-stream'
+      }, {
+        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader?name=src/[name].[ext]'
+      }, {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "url-loader?limit=10000&name=src/[name].[ext]&mimetype=image/svg+xml"
       }
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
     new htmlWebpackPlugin({
       filename : 'index.html',
       template: 'index.html',
       inject: 'body',
-      title: 'this is layout.html'
+      title: 'ImageMark首页面',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      chunks: ['index']
     }),
     new htmlWebpackPlugin({
-      filename : 'login.html',
+      filename : 'app.html',
       template: 'index.html',
       inject: 'body',
-      title: 'this is layout.html'
+      title: 'ImageMark首页面',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      chunks: ['app']
     })
   ]
 }
