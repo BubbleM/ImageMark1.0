@@ -1,6 +1,5 @@
 require('./css/common.css');
 import Index from './components/index/index';
-import './components/index/main';
 
 const App = function () {
   let dom = document.getElementById('app');

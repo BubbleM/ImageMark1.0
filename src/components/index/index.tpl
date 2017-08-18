@@ -68,22 +68,22 @@
 <% for (let i = 0; i < arr.length; i++) { %>
   <% if (i % 2 === 0) { %>
   <div class="section" class="row">
-    <div class="col-md-7">
-      <img class="section_img" src="" alt="">
-    </div>
     <div class="col-md-5 info">
       <h2><%= arr[i].title %></h2>
       <p><%= arr[i].content %></p>
+    </div>
+    <div class="col-md-7">
+      <img class="section_img" src="${require('../../assets/1.JPG')}" alt="">
     </div>
   </div>
   <% } else { %>
   <div class="section" class="row">
+    <div class="col-md-7">
+      <img class="section_img" src="${require('../../assets/1.JPG')}" alt="">
+    </div>
     <div class="col-md-5 info">
       <h2><%= arr[i].title %></h2>
       <p><%= arr[i].content %></p>
-    </div>
-    <div class="col-md-7">
-      <img class="section_img" src="" alt="">
     </div>
   </div>
   <% } %>

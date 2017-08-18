@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
   entry : {
     index: './src/index.js',
+    navAnimation: './src/components/index/navAnimation.js',
     app: './src/app.js'
   },
   output: {
@@ -35,7 +36,7 @@ module.exports = {
         test: /\.styl/,
         loader: 'style-loader!css-loader!postcss-loader!stylus-loader'
       },{
-        test: /\.(png|jpg|gif|svg|mp4|JPG)$/i,
+        test: /\.(png|jpg|gif|mp4|JPG)$/i,
         loaders: [
           'file-loader?limit:20000&name=assets/[name]-[hash:5].[ext]',
           'image-webpack-loader'
@@ -69,7 +70,7 @@ module.exports = {
         removeComments: true,
         collapseWhitespace: true
       },
-      chunks: ['index']
+      chunks: ['index', 'navAnimation']
     }),
     new htmlWebpackPlugin({
       filename : 'app.html',

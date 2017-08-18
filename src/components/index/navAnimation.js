@@ -1,5 +1,3 @@
-require('./index.styl');
-
 // 封装一个操作DOM的函数
 (function (window, undefined) { // 定义一个立即执行函数,传入全局对象window
   function dquery(id) {

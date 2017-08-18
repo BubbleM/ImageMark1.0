@@ -3,7 +3,7 @@
  * http://cssreset.com
  */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -12,7 +12,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
+figure, figcaption, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, input {
   margin: 0;
@@ -49,7 +49,7 @@ table {
 
 /* custom */
 a {
-  color: #7e8c8d;
+  /*color: #7e8c8d;*/
   text-decoration: none;
   -webkit-backface-visibility: hidden;
 }
