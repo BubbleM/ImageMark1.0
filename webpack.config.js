@@ -37,7 +37,7 @@ module.exports = {
       },{
         test: /\.(png|jpg|gif|svg|mp4|JPG)$/i,
         loaders: [
-          'url-loader?limit:20000&name=assets/[name]-[hash:5].[ext]',
+          'file-loader?limit:20000&name=assets/[name]-[hash:5].[ext]',
           'image-webpack-loader'
         ]
       },{
