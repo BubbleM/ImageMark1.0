@@ -7,7 +7,8 @@ module.exports = {
   entry : {
     index: './src/index.js',
     navAnimation: './src/components/index/navAnimation.js',
-    app: './src/app.js'
+    app: './src/app.js',
+    login: './src/login.js'
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -82,6 +83,17 @@ module.exports = {
         collapseWhitespace: true
       },
       chunks: ['app']
+    }),
+    new htmlWebpackPlugin({
+      filename : 'login.html',
+      template: 'index.html',
+      inject: 'body',
+      title: 'ImageMark登录',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      chunks: ['login']
     })
   ]
 }
