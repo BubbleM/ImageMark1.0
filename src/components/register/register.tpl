@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row login-wrapper">
+  <div class="row register-wrapper">
     <div class="col-md-7 col-xs-10 box-wrapper">
       <h1><img src="${require('../../assets/logo.png')}"></h1>
       <form class="" action="">
@@ -10,11 +10,13 @@
           <input type="password" class="form-control" placeholder="密码">
         </div>
         <div class="row input1">
-          <button type="button" class="btn btn-primary col-xs-8 col-md-6 btn-group-lg">立即登录</button>
-          <div class="textBtn"><a class="col-md-6 col-xs-8" href="../../">忘记密码</a></div>
+          <input type="password" class="form-control" placeholder="再次输入密码">
+        </div>
+        <div class="row input1">
+          <button type="button" class="btn btn-primary col-xs-8 col-md-6 btn-group-lg">立即注册</button>
         </div>
       </form>
-      <span>还没有账户？您可以在此 <a href="./register.html">注册</a></span>
+      <span>已有账户？点击 <a href="./login.html">登录</a></span>
     </div>
     <div class="col-md-5"></div>
   </div>

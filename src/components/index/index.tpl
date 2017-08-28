@@ -61,7 +61,7 @@
     </ul>
     <div class="login">
       <button class="btn btn-success" href="#" role="button"><a href="/login.html">登陆</a></button>
-      <button class="btn btn-success" href="#" role="button">注册</button>
+      <button class="btn btn-success" href="#" role="button"><a href="/register.html">注册</a></button>
     </div>
   </header>
 
@@ -92,8 +92,8 @@
   <footer>
     <span>Amazing基于深度学习的数据标记平台©2017展示专用</span><br><br>
     <span>
-      <a href="app.html">注册</a>&nbsp;|&nbsp;
-      <a href="www.baidu.com">登录</a>&nbsp;|&nbsp;
+      <a href="register.html">注册</a>&nbsp;|&nbsp;
+      <a href="login.html">登录</a>&nbsp;|&nbsp;
       <a href="">关于我们</a>&nbsp;|&nbsp;
       <a href="">功能</a>&nbsp;|&nbsp;
       <a href="">隐私权政策</a>&nbsp;|&nbsp;
