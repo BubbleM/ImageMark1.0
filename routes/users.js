@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var User = require('../db/dao/User');
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  let user = new User();
+  user.find();
+  res.send('HAHA');
 });
 
 module.exports = router;
