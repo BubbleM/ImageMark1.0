@@ -829,7 +829,7 @@ var __t, __p = '';
 with (obj) {
 __p += '<div class="container-fluid">\n  <div class="row login-wrapper">\n    <div class="col-md-7 col-xs-10 box-wrapper">\n      <h1><img src="' +
 ((__t = (__webpack_require__(13))) == null ? '' : __t) +
-'"></h1>\n      <form class="" action="">\n        <div class="row input1">\n          <input type="text" class="form-control" placeholder="用户名">\n        </div>\n        <div class="row input1">\n          <input type="password" class="form-control" placeholder="密码">\n        </div>\n        <div class="row input1">\n          <button type="button" class="btn btn-primary col-xs-8 col-md-6 btn-group-lg">立即登录</button>\n          <div class="textBtn"><a class="col-md-6 col-xs-8" href="https://bubblem.github.io/ImageMark1.0/login.html">忘记密码</a></div>\n        </div>\n      </form>\n      <span>还没有账户？您可以在此 <a href="https://bubblem.github.io/ImageMark1.0/register.html">注册</a></span>\n    </div>\n    <div class="col-md-5"></div>\n  </div>\n</div>';
+'"></h1>\n      <form class="" action="">\n        <div class="row input1">\n          <input type="text" class="form-control" placeholder="用户名">\n        </div>\n        <div class="row input1">\n          <input type="password" class="form-control" placeholder="密码">\n        </div>\n        <div class="row input1">\n          <button type="button" class="btn btn-primary col-xs-8 col-md-6 btn-group-lg">立即登录</button>\n          <div class="textBtn"><a class="col-md-6 col-xs-8" href="#">忘记密码</a></div>\n        </div>\n      </form>\n      <span>还没有账户？您可以在此 <a href="https://bubblem.github.io/ImageMark1.0/register.html">注册</a></span>\n    </div>\n    <div class="col-md-5"></div>\n  </div>\n</div>';
 
 }
 return __p
