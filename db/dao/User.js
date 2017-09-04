@@ -1,11 +1,14 @@
 var db = require('../util/DBConfig');
 
-function User(){};
+function User(username){
+  this.username = username;
+  this.password = this.getPassword(username);
+}
 
-User.prototype.find = function () {
-  let sql = 'SELECT * from user';
+User.prototype.getPassword = function(username) {
+  let sql = `SELECT password FROM user WHERE username='${username}'`;
   db.query(sql, function (err, rows) {
-    console.log(rows);
+    return rows[0].password;
   });
 }
 
