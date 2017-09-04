@@ -15,18 +15,18 @@
   <div class="row register-wrapper">
     <div class="col-md-7 col-xs-10 box-wrapper">
       <h1><img src="images/logo.png"></h1>
-      <form class="" action="">
+      <form class="" action="/register" method="post">
         <div class="row input1">
-          <input type="text" class="form-control" placeholder="用户名">
+          <input type="text" name="username" class="form-control" placeholder="用户名">
         </div>
         <div class="row input1">
-          <input type="password" class="form-control" placeholder="密码">
+          <input type="password" name="pwd1" class="form-control" placeholder="密码">
         </div>
         <div class="row input1">
-          <input type="password" class="form-control" placeholder="再次输入密码">
+          <input type="password" name="pwd2" class="form-control" placeholder="再次输入密码">
         </div>
         <div class="row input1">
-          <button type="button" class="btn btn-primary col-xs-8 col-md-6 btn-group-lg">立即注册</button>
+          <button type="submit" class="btn btn-primary col-xs-8 col-md-6 btn-group-lg">立即注册</button>
         </div>
       </form>
       <span>已有账户？点击 <a href="/login">登录</a></span>
